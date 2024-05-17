@@ -8,7 +8,7 @@
 <body class="bg-gray-100 text-gray-900">
 
     <!-- Header -->
-    <header class="bg-blue-600 text-white p-6">
+    <header class="bg-green-500 text-stone-600 p-6">
       <div class="container mx-auto">
         <h1 class="text-4xl font-bold">My Portfolio</h1>
         <p class="mt-2 text-xl">Welcome to my personal portfolio website.</p>
@@ -16,31 +16,46 @@
     </header>
   
     <!-- Introduction Section -->
-    <section class="py-12 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-4">About Me</h2>
-        <p class="text-lg leading-7">
-          Hi, I'm [Your Name], a passionate developer with a knack for creating beautiful and functional websites and applications. I love to learn new technologies and continuously improve my skills.
-        </p>
+  <section class="py-12 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center md:items-start">
+
+        <!-- Profile Picture -->
+        <img src="/img/Profile picture.jpg" alt="Profile Picture" class="w-64 h-80 rounded-md md:ml-6 mb-4 md:mb-0 md:order-2">
+
+        <!-- About Me Text -->
+        <p class="text-base md:text-2xl lg:text-xl">
+        <p>Bon jorno! <br> My name is Märt Pors <br> I'm passionate developer with a knack for creating beautiful and functional websites and applications. I love to learn new technologies and continuously improve my skills.<br>I am 28 years old and I am interested in web development. I am currently studying Junior Software Developer at Kuressaare Regional Centre.</p>
       </div>
-    </section>
+    </div>
+  </section>
   
-    <!-- Projects Section -->
-    <section class="py-12 bg-gray-200">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-4">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Project 1 -->
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h3 class="text-2xl font-semibold mb-2">Project One</h3>
-            <p class="text-lg">A brief description of the project goes here.</p>
-            <a href="#" class="text-blue-600 mt-4 inline-block">View Project</a>
-          </div>
-          <!-- Add more projects as needed -->
+    <!-- Skills Section -->
+  <section class="py-12 bg-gray-200">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Skill 1: HTML -->
+        <div class="bg-white p-6 rounded-lg shadow-lg shadow-black text-center hover:bg-gray-100">
+          <h3 class="text-2xl font-semibold mb-2">HTML</h3>
+          <p class="text-lg">Proficient in creating structured and semantic markup for web pages.</p>
         </div>
+        <!-- Skill 2: CSS -->
+        <div class="bg-white p-6 rounded-lg shadow-lg shadow-black text-center hover:bg-gray-100">
+          <h3 class="text-2xl font-semibold mb-2">CSS</h3>
+          <p class="text-lg">Experienced in styling web pages using CSS, including Flexbox and Grid layouts.</p>
+        </div>
+        <!-- Skill 3: JavaScript -->
+        <div class="bg-white p-6 rounded-lg shadow-lg shadow-black text-center hover:bg-neutral-50">
+          <h3 class="text-2xl font-semibold mb-2">JavaScript</h3>
+          <p class="text-lg">Skilled in writing dynamic and interactive scripts for web applications.</p>
+        </div>
+        <!-- Add more skills as needed -->
       </div>
-    </section>
-  
+    </div>
+  </section>
+
     <!-- Contact Section -->
     <section class="py-12 bg-white">
       <div class="container mx-auto px-4">
@@ -48,15 +63,15 @@
         <form class="space-y-4">
           <div>
             <label for="name" class="block text-lg font-medium">Name</label>
-            <input type="text" id="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+            <input type="text" id="name" class="mt-1 block w-full border-gray-100 rounded-md shadow-sm  focus:ring focus:ring-blue-200 focus:ring-opacity-50 hover:bg-gray-100 shadow-lg shadow-black">
           </div>
           <div>
             <label for="email" class="block text-lg font-medium">Email</label>
-            <input type="email" id="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+            <input type="email" id="email" class="mt-1 block w-full border-gray-100 rounded-md shadow-sm focus:ring focus:ring-blue-200 focus:ring-opacity-50 hover:bg-gray-100 shadow-lg shadow-black">
           </div>
           <div>
             <label for="message" class="block text-lg font-medium">Message</label>
-            <textarea id="message" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"></textarea>
+            <textarea id="message" rows="4" class="mt-1 block w-full border-gray-100 rounded-md shadow-sm focus:ring focus:ring-blue-200 focus:ring-opacity-50 hover:bg-gray-100 shadow-lg shadow-black" ></textarea>
           </div>
           <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">Send Message</button>
         </form>
@@ -66,7 +81,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white p-6">
       <div class="container mx-auto">
-        <p class="text-center">&copy; 2024 [Your Name]. All rights reserved.</p>
+        <p class="text-center">&copy; 2024 Märt Pors. All rights reserved.</p>
       </div>
     </footer>
   </body>
